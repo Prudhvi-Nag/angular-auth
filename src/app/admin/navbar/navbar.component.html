@@ -1,0 +1,23 @@
+
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+    <div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>My Todo Application</span>
+    </div>
+    <div>
+        <button routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true}" mat-button class="home-link favorite-icon"
+            aria-label="Example icon-button with heart icon">
+            Home 
+        </button>
+        <button routerLink="edit" routerLinkActive="active" mat-button class="edit-link"
+            aria-label="Example icon-button with share icon">
+            Edit
+        </button>
+
+        <button (click)="forDashborad()" class="btn btn-primary rounded me-3">Dashboard</button>
+        <button (click)="forLogin()" class="btn btn-danger rounded">Logout</button>
+       
+    </div>
+</mat-toolbar>
